@@ -1,0 +1,23 @@
+[project]
+name = "test2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "owen2006lin", email = "owen2006lin@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pot>=0.9.7.post1",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.0",
+]
+
+[project.scripts]
+test2 = "test2:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
